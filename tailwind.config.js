@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
   content: [
     `./src/pages/**/*.{js,jsx,ts,tsx}`,
@@ -6,6 +9,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'sans': ['Public Sans', ...defaultTheme.fontFamily.sans],
+      },
       fontSize: {
         'xss': '10px'
       },
