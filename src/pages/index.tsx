@@ -13,7 +13,7 @@ const IndexPage: React.FC<PageProps> = () => {
           Back to supervisor map
         </Button>
         <div className="w-full flex justify-center md:w-auto">
-          <StaticImage src="../images/joel.png" alt="Joel's Image" width={247} height={329} className="w-[200px] h-[266px] md:w-[247px] md:h-[329px]" />
+          <StaticImage src="../images/joel.png" alt="Joel's Image" width={247} height={329} className="w-[200px] h-[266px] md:w-[247px] md:h-[329px]" quality={100} />
         </div>
         <div className="flex flex-col gap-4">
           <Button className="hidden md:flex" icon="icon-back-chevron">
@@ -30,7 +30,7 @@ const IndexPage: React.FC<PageProps> = () => {
           <hr className="border-grey/2" />
           <div className="flex flex-row gap-4">
             <div>
-              <StaticImage src="../images/map.png" alt="Map Image" width={150} height={134} className="rounded-sm w-[75px] h-[67px] md:w-[150px] md:h-[134px]" />
+              <StaticImage src="../images/map.png" alt="Map Image" width={150} height={134} className="rounded-sm w-[75px] h-[67px] md:w-[150px] md:h-[134px]" quality={100} />
             </div>
             <p className="text-grey/4 text-xs md:text-sm">District 4 includes the Sunset, the Outer Sunset, Parkside, part of Merced Manor south of Sloat and West of 19th, and includes the Great Highway and Sunset Boulevard.</p>
           </div>
