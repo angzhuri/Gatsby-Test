@@ -21,7 +21,7 @@ const IndexPage: React.FC<PageProps> = () => {
           </Button>
           <div className="grid justify-items-center md:grid-cols-2 gap-1 md:gap-4 md:justify-items-stretch">
             <p className="text-xss md:text-xs text-green/4 font-bold uppercase md:order-3 md:text-right">
-              <span className="tracking-wider">Endorsed <span className="md:hidden">By Growsf</span></span>
+              <span className="tracking-wider">Endorsed <span className="hidden md:inline">By Growsf</span></span>
               <Icon name="icon-accent" width={15} height={15} className="inline -ml-2 -mt-3" />
             </p>
             <h1 className="text-blue/5 font-bold text-2xl md:font-black md:text-5xl md:order-1 md:col-span-2">Joel Engardio</h1>
@@ -38,10 +38,10 @@ const IndexPage: React.FC<PageProps> = () => {
           <div className="w-full flex">
             <div className="w-1/2 space-y-1">
               <h2 className="uppercase text-grey/5 text-xss md:text-xs font-bold tracking-wider">Took Office</h2>
-              <p className="text-grey/4 text-xs md:text-sm font-light">
-                November 2016.<br />
-                Won by <span className="font-bold">3,732 votes</span>
-              </p>
+              <div className="text-grey/4 text-xs md:text-sm font-light">
+                <p className="">November 2016.</p>
+                <p>Won by <span className="font-bold">3,732 votes</span></p>
+              </div>
             </div>
             <div className="w-1/2 space-y-1">
               <h2 className="uppercase text-grey/5 text-xss md:text-xs font-bold tracking-wider">Up For Re-Election</h2>
